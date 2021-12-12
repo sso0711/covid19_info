@@ -1,6 +1,17 @@
 body {
   margin: 0;
   padding: 0;
+  height: 1000px;
+}
+
+#body-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+#body-content {
+  margin-top: 100px;
+  padding-bottom: 99999px; /* footer의 높이 */
 }
 
 header {
@@ -18,21 +29,57 @@ header {
   background-color: #eeff59;
 }
 
-section {
-  height: fit-content;
+#section {
+  float: left;
+  width: 75%;
+  height: 10000px;
 }
 
 aside {
-  width: 25%;
+  float: left;
+  margin-left: 30px;
+  width: 20%;
+}
+
+#aside {
+  margin: 23px;
+  padding-bottom: 20px;
+  border: 10px ridge skyblue;
+  text-align: center;
+}
+
+#moreinfo {
+  font-size: 20px;
+}
+
+footer pre {
+  font-size: 15px;
 }
 
 footer {
-  height: 130px;
-  background-color: aquamarine;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-footer p {
-  height: 130px;
+#footer_info {
+  float: left;
+  margin-left: 50px;
+  margin-top: 10px;
+  padding: 2px;
+}
+
+#else {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  float: left;
+  border: 1px solid black;
+  width: 0.1px;
+  height: 50px;
 }
 
 #logo_canvas {
@@ -97,11 +144,40 @@ nav .menu:hover {
   outline: none;
 }
 
-tr {
-  display: block;
-  float: left;
+.content {
+  margin-left: 30px;
+  padding-left: 10px;
 }
+
+table {
+  width: 1000px;
+  min-width: 400px;
+  margin-left: 10px;
+  border-top: 2px solid;
+  border-collapse: collapse;
+}
+
+#table_top {
+  background-color: rgb(170, 255, 255);
+}
+
 th,
 td {
-  display: block;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  padding: 10px;
+}
+
+th:first-child,
+td:first-child {
+  border-left: none;
+}
+
+form {
+  border: 3px solid blue;
+}
+
+iframe {
+  width: 90%;
+  height: 500px;
 }

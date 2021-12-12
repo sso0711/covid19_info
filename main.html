@@ -12,11 +12,13 @@
     <header>
       <a href="main.html">
         <canvas id="logo_canvas" width="200" height="150">로고 </canvas>
+      </a>
       
       <a href="main.html">
         <canvas id="title_canvas" width="770" height="120" onclick="main.html"
           >페이지 제목
         </canvas>
+      </a>
 
       <div id="a">
         <input
@@ -25,7 +27,6 @@
           type="button"
           value="day"
           onclick="document.querySelector('section').style.backgroundColor='white';
-          document.querySelector('nav').style.backgroundColor='#eeff59';
           document.querySelector('section').style.color='black';"
         />
         <input
@@ -34,7 +35,7 @@
           type="button"
           value="night"
           onclick="
-          document.querySelector('nav').style.backgroundColor='grey';
+          document.querySelector('section').style.backgroundColor='black';
           document.querySelector('section').style.color='white';"
         />
       </div>
@@ -47,17 +48,21 @@
 
     <nav id="nav">
       <ul>
-        <li><a class="menu" href="코로나19란.html">코로나19란?</a></li>
-        <li><a class="menu" href="뉴스영상.html">뉴스영상</a></li>
-        <li><a class="menu" href="신문사이트.html">신문사이트</a></li>
-        <li><a class="menu" href="건의사항.html">건의사항</a></li>
+        <li><a class="menu" href="main.html" title="바이러스의 기본정보, 한국 방역체계 등을 알 수 있습니다.">코로나19란?</a></li>
+        <li><a class="menu" href="뉴스영상.html" title="핵심 뉴스영상들을 볼 수 있습니다.">뉴스영상</a></li>
+        <li><a class="menu" href="신문사이트.html" title="여러 신문 사이트들을 한 번에 볼 수 있습니다.">신문사이트</a></li>
+        <li><a class="menu" href="건의사항.html" title="페이지에 추가하고 싶은 기능이나 내용을 건의할 수 있습니다.">건의사항</a></li>
       </ul>
     </nav>
-    <section>
-        <article>
+
+    <section id="section">
+
+          <hr>
+
+<h2>코로나 바이러스 분류 및 특성</h2>
             <table>
                 <thead>
-                    <tr>
+                    <tr id="table_top">
                         <th>개요</th>
                         <th>종류</th>
                         <th>형태</th>
@@ -86,18 +91,48 @@
                     </tr>
                 </tbody>
             </table>
-        </article>
-    </section>
+      
 
-        </article>
+<h2>2.대한민국 방역체계</h2>
+<hr>
+<p style="margin-left:20px;">
+<b><mark>한국정부 대응체계</mark></b> (’21.11.26일 기준)
+<pre style="margin-left:20px;">
+한국정부는 코로나19 확산에 의한 감염병 위기경보 단계를, ’20.2.23일 「심각」단계로 격상 후, 현재까지 「심각」단계를 유지하고 대응 중입니다.
+
+코로나19 대응을 위하여 국무총리를 본부장으로 하는 중앙재난안전대책본부를 가동하여 범정부적으로 방역에 집중하며,
+감염병 대응의 특수성과 전문성을 고려하여 방역 컨트롤타워인 중앙방역대책본부(질병관리청)과 중앙사고수습본부장(보건복지부장관)이 협력하여 방역업무를 총괄하고 있습니다.
+범정부대책지원본부장인 행정안전부장관이 중앙재난안전대책본부 제2차장으로서 중앙 및 지방자치단체 간 협조 등 필요 사항을 지원하고,
+각 지방자치단체에서도 단체장을 중심으로 하는 ’지역재난안전대책본부‘를 구성하여 각 지역에서의 방역업무를 수행하고 있습니다.
+</pre>
+</p>
+
+
     </section>
-    <aside></aside>
+    
+    <aside>
+      <div id="aside">
+        <p id="moreinfo"><b>더 많은 정보</b><p>
+          <hr style="border-top:1px dashed #bbb">
+        <div><a href="http://www.mohw.go.kr/react/index.jsp">보건복지부 사이트</a></div>
+        <div><a href="https://www.kdca.go.kr/index.es?sid=a2">질병관리청 사이트</a><div>
+      </div>
+    </aside>
+    
     <footer>
-        <p>
-        ㉿ Copyright me<br>
-        정보통신공학과 <br>
-        202001448 박소영
-        </p>
+        <span style="border-rignt-style:solid;" id='footer_info'>
+        <pre>    ㉿ Copyright me
+
+        정보통신공학과
+        202001448 박소영</pre>
+        </span>
+
+        <span id='else'></span>
+
+
+
+        <a id="footer_logo" href="main.html">
+          <canvas id="logo_canvas" width="200" height="150">로고 </canvas>
     </footer>
 
     <script src="javascript.js">

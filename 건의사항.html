@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홈 화면</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="body-wrapper">
+    <header>
+      <a href="main.html">
+        <canvas id="logo_canvas" width="200" height="150">로고 </canvas>
+      </a>
+      
+      <a href="main.html">
+        <canvas id="title_canvas" width="770" height="120" onclick="main.html"
+          >페이지 제목
+        </canvas>
+      </a>
+
+      <div id="a">
+        <input
+          id="day"
+          class="button"
+          type="button"
+          value="day"
+          onclick="document.querySelector('section').style.backgroundColor='white';
+          document.querySelector('section').style.color='black';"
+        />
+        <input
+          id="night"
+          class="button"
+          type="button"
+          value="night"
+          onclick="
+          document.querySelector('section').style.backgroundColor='black';
+          document.querySelector('section').style.color='white';"
+        />
+      </div>
+
+      <span style="color: gray; margin-left: 150px">배경음악</span>
+      <audio id="audio" src="music.m4a" width="300" autoplay controls loop>
+        오디오 실행 불가.
+      </audio>
+    </header>
+
+    <nav id="nav">
+      <ul>
+        <li><a class="menu" href="main.html" title="바이러스의 기본정보, 한국 방역체계 등을 알 수 있습니다.">코로나19란?</a></li>
+        <li><a class="menu" href="뉴스영상.html" title="핵심 뉴스영상들을 볼 수 있습니다.">뉴스영상</a></li>
+        <li><a class="menu" href="신문사이트.html" title="여러 신문 사이트들을 한 번에 볼 수 있습니다.">신문사이트</a></li>
+        <li><a class="menu" href="건의사항.html" title="페이지에 추가하고 싶은 기능이나 내용을 건의할 수 있습니다.">건의사항</a></li>
+      </ul>
+    </nav>
+<section id="section" style="margin-left:30px">
+    <h3>건의사항을 작성해 주세요.</h3>
+<form action="a.com">
+email : <input type="text" placeholder="이메일"><br>
+제목 : <input type="text" placeholder="제목을 입력해주세요."><br>
+내용 : <input type="text" placeholder="내용을 입력해주세요.">
+		<input type="submit" value="제출" onclick="javascript:alert("정상적으로 전송되었습니다.");"><br><br>
+
+</form>
+</legend>
+    </section>
+    
+    <aside>
+      <div id="aside">
+        <p id="moreinfo"><b>더 많은 정보</b><p>
+          <hr style="border-top:1px dashed #bbb">
+        <div><a href="http://www.mohw.go.kr/react/index.jsp">보건복지부 사이트</a></div>
+        <div><a href="https://www.kdca.go.kr/index.es?sid=a2">질병관리청 사이트</a><div>
+      </div>
+    </aside>
+    
+    <footer>
+        <span style="border-rignt-style:solid;" id='footer_info'>
+        <pre>    ㉿ Copyright me
+
+        정보통신공학과
+        202001448 박소영</pre>
+        </span>
+
+        <span id='else'></span>
+
+
+
+        <a id="footer_logo" href="main.html">
+          <canvas id="logo_canvas" width="200" height="150">로고 </canvas>
+    </footer>
+
+    <script src="javascript.js">
+    </script>
+  </div>
+  </body>
+</html>
